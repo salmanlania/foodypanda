@@ -1,0 +1,16 @@
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
+.footer p{
+    width: 190px;
+    color: #E3B3D6;
+    font-weight: bold;
+}
+.lastList{
+    display: flex;
+    justify-content: space-evenly;
+}
+.lastList li{
+    list-style: none;
+}

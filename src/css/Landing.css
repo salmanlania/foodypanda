@@ -1,0 +1,244 @@
+.landing{
+    overflow: hidden;
+}
+.container1 {
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.container1 .main img {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    margin-left: 15px;
+}
+.business:hover{
+    overflow: hidden;
+}
+
+.container1 .main1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-evenly;
+    font-size: 40px;
+    margin-left: 20px;
+    font-family: Open Sans;
+}
+
+.container1 .main1 .findInput {
+    text-align: center;
+    background-color: white;
+    box-shadow: 3px 2px 5px 39px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 3px 2px 5px 39px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 3px 2px 5px 39px rgba(255, 255, 255, 0.75);
+    box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, .1);
+    height: 80px;
+    padding-top: 20px;
+}
+
+.container1 .main1 .findInput input {
+    width: 500px;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    line-height: 0.5em;
+    padding: 2px 15px;
+    position: relative;
+    resize: none;
+    transition: all .15s;
+    font-size: 22px;
+    z-index: 1;
+}
+
+.container1 .main1 .findInput button {
+    width: 105px;
+    height: 50px;
+    font-size: 14px;
+    line-height: 22px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    margin: 0px;
+    padding: 0px 16px;
+    color: white;
+    background-color: #C21760;
+    border: solid gray;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+.container1 .main1 .findInput input::placeholder {
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ============================== */
+.container2 {
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.container2 .hero p {
+    margin: 5rem 0 2rem 4rem;
+    font-size: 2rem;
+    font-family: Open Sans;
+
+}
+
+.container2 .hero1 {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.container2 .hero1 img {
+    width: 100%;
+    /* height: 90vh; */
+    transform: scale(1.1);
+
+
+}
+
+
+/* ==================== */
+.container3 {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+.container3 .card01 {
+    background-color: #fff;
+    box-shadow: 0px 0px 7px 0px rgba(76, 74, 74, 0.415);
+    padding: 35px;
+    padding-top: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    width: 43%;
+    height: 400PX;
+    position: absolute;
+    top: -10rem;
+    left: 5rem;
+    margin: 6px;
+    font-size: 22PX;
+}
+
+.container3 .card11 p {
+    width: 100%;
+    margin: 1.9rem 1rem 1rem 0.1rem;
+}
+
+.container3 .card1>p:first-child {
+    font-size: 1.6rem;
+    font-weight: 400;
+
+}
+
+.container3 .card11 button {
+    background-color: #D70F64;
+    border-radius: 6px;
+    color: white;
+    font-weight: 600;
+    outline: #D70F64;
+    border: 2px solid #D70F64;
+    padding: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.container3 .card11 button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* ========================================================== */
+
+.container4{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.location div p{
+    font-family: 'Open Sans';
+    font-size: 48px;
+    margin-left: 30px;
+}
+
+
+/* ========================================================== */
+
+
+.container7 {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    margin-left: 15px;
+  }
+  
+  .container7 .card2 {
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 0px 7px 0px rgba(76, 74, 74, 0.415);
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 10px;
+    width: 43%;
+    height: auto;
+    position: absolute;
+    /* top: -7rem;
+    left: 5rem; */
+    margin: 6px;
+  
+  }
+  
+  .container7 .card3 p {
+    width: 600px;
+    width: 200px;
+    margin: 1.9rem 1rem 1rem 0.1rem;
+  }
+  .container7 .card3 .order{
+    width: 600px;
+  }
+  
+  .container7 .card3>p:first-child {
+    font-size: 1.6rem;
+    font-weight: 400;
+  
+  }
+  
+  .container7 .card3 button {
+    background-color: #D70F64;
+    border-radius: 6px;
+    color: white;
+    font-weight: 600;
+    outline: #D70F64;
+    border: 2px solid #D70F64;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .container7 .card3 button:hover {
+    overflow: hidden;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+  /* ============================ */
+
+
+
+  

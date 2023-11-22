@@ -1,0 +1,25 @@
+.ContactDetail{
+    color: #C21760;
+    box-shadow: 0px -25px 20px -20px rgba(0,0,0,0.45),
+25px 0px 20px -20px rgba(0,0,0,0.45),
+0px 25px 20px -20px rgba(0,0,0,0.45),
+-25px 0px 20px -20px rgba(0,0,0,0.45);
+    display: flex;
+    align-items: center;
+    width: 40%;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 30px;
+    font-weight: bold;
+    line-height: 35px;
+}
+.ContactDetail li{
+    font-size: 18px;
+}
+.ContactDetail img{
+    display: flex;
+    align-self: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+}

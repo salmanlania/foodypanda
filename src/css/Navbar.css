@@ -1,0 +1,31 @@
+ .Navbar {
+   margin: 0;
+   padding: 0;
+ }
+
+
+
+ nav {
+   height: 80px;
+   overflow: hidden;
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ ul {
+   list-style: none;
+   display: flex;
+   margin-right: 15px;
+ }
+
+ .login {
+   cursor: pointer;
+   margin-right: 25px;
+   background: red;
+   color: white;
+   border: none;
+   font-weight: bold;
+   width: 70px;
+ }

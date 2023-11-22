@@ -1,0 +1,174 @@
+.chekoutHeader {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tableList {
+    background-color: #dd0707;
+    width: 40rem;
+    height: fit-content;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar td {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar .marginRight {
+    margin-right: 65px;
+}
+
+.carding {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carding tr td img {
+    width: 20px;
+}
+
+.carding tr {
+    width: 100%;
+}
+
+.carding tr td {
+    width: 7em;
+    text-align: left;
+}
+
+.carding tr .img {
+    width: 10.5em;
+    text-align: center;
+    padding: 5px;
+}
+
+.carding tr .img .proImg {
+    width: 35px;
+}
+
+.carding tr .cardingItem {
+    padding: 5px;
+    width: 17.5em;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.carding tr .cardingPrice {
+    padding: 5px;
+    font-size: 1rem;
+    width: 12em;
+    text-align: left;
+}
+
+
+/* ============================================== */
+.checkTotal {
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    width: 38.5rem;
+    height: 15em;
+    padding: 10px;
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+}
+
+.checkTotalTotal {
+    text-align: center;
+    font-size: 25;
+    text-decoration: underline;
+}
+
+.total {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.total .name {
+    font-weight: bold;
+}
+
+.checkTotalBtn {
+    cursor: pointer;
+    margin: 15px;
+    margin-left: 95px;
+    background: red;
+    color: white;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    width: 120px;
+    border-radius: 15px;
+    height: 35px;
+}
+
+.CheckOutFooter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 350px;
+}
+
+.checkOutForms {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    background: #fff;
+    padding: 1.5rem 1rem;
+    width: 390px;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    margin: 3rem auto 3rem;
+}
+
+.checkOutForms input {
+    outline: none;
+    padding: 0.8rem 0.5rem;
+    margin-bottom: 1.8rem;
+    font-size: 0.9rem;
+}
+
+.checkOutForms select {
+    outline: none;
+    padding: 0.8rem 0.5rem;
+    margin-bottom: 1.8rem;
+    font-size: 0.9rem;
+}
+
+.checkOutForms button {
+    outline: none;
+    border: none;
+    background: #D70F64;
+    padding: 0.8rem 1rem;
+    border-radius: 0.4rem;
+    font-size: 1.1rem;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+.checkOutForms button:hover {
+    background: #d70f6292;
+    cursor: pointer;
+}

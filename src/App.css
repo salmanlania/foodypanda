@@ -1,0 +1,40 @@
+.App {
+  scrollbar-width: none;
+  /* Firefox 64 */
+  -ms-overflow-style: none;
+  /* Internet Explorer 11 */
+}
+
+.App::-webkit-scrollbar {
+  /** WebKit */
+  display: none;
+}
+.loader {
+  margin-left: 47%;
+  margin-top: 200px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 1s linear infinite;
+}
+.red {
+  border: 1px solid red;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}
+
+.black {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
+
+.white {
+  border: 1px solid white;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+}

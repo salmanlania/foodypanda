@@ -1,0 +1,47 @@
+.cardlist {
+    margin: 25px;
+    overflow: hidden;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+.container {
+    position: relative;
+    width: auto;
+    /* max-width: 800px; */
+    overflow: hidden;
+}
+
+.container img {
+    border-radius: 25px;
+    width: 300px;
+    height: auto;
+    filter: blur(8px);
+    overflow: hidden;
+}
+.container img:hover{
+    filter: blur(0);
+    overflow: hidden;
+    transform: scale(1.09);
+    transition: 1s;
+}
+
+.container .button {
+    position: absolute;
+    top: 160px;
+    right: 70px;
+    width: 170px;
+    /* right: 100px; */
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color:rgb(255, 255, 255);
+    color:black;
+    font-size: 18px;
+    padding: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+    font-family: Open Sans;
+    /* z-index: -10; */
+}
