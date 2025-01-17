@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "foodypanda",
+    "site" : "foodypanda",
     "public": "build",
     "ignore": [
       "firebase.json",

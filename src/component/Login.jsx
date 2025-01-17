@@ -15,10 +15,6 @@ const Login = () => {
         navigate('/signup')
     }
 
-   
-  
-   
-
     async function loginac() {
         if (email === null || password === null) {
             Swal.fire({

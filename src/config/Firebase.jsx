@@ -6,14 +6,13 @@ import Swal from "sweetalert2";
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBqJktoxqMLv26P3igYrBs7P9qkG1_9YGM",
-    authDomain: "lania-foods.firebaseapp.com",
-    projectId: "lania-foods",
-    storageBucket: "lania-foods.appspot.com",
-    messagingSenderId: "873057356223",
-    appId: "1:873057356223:web:3bedd213a22188e005f90a"
+    apiKey: "AIzaSyC7nvLAQMdm2bV63qIdgnfUFn_xLZimNb4",
+    authDomain: "food-panda-a12e6.firebaseapp.com",
+    projectId: "food-panda-a12e6",
+    storageBucket: "food-panda-a12e6.appspot.com",
+    messagingSenderId: "1002773693351",
+    appId: "1:1002773693351:web:6e9550107715f38e786c82"
 };
-
 
 
 const app = initializeApp(firebaseConfig);
@@ -22,46 +21,58 @@ const db = getFirestore(app);
 
 const register = async (email, password, firstName, lastName) => {
     try {
-        const userCredential = await createUserWithEmailAndPassword(auth, email, password, firstName, lastName)
+        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+        const user = userCredential.user;
+
         const docRef = await addDoc(collection(db, "users"), {
+            userId: user.uid,  // Assuming you have a field to store the user ID
             email: email,
             firstName: firstName,
-            LastName: lastName,
+            lastName: lastName,
         });
 
         Swal.fire(
             'Successfully',
             'Sign Up'
         )
-    }
-    catch (e) {
+    } catch (e) {
         Swal.fire({
             icon: 'error',
             title: 'Something went wrong!',
         })
     }
 }
-const orderProceed = async (fullNames,creditCard,expiry,cvv,shipping) => {
+const orderProceed = async (fullNames, creditCard, expiry, cvv, shipping) => {
     try {
-        const userCredential = await createUserWithEmailAndPassword(fullNames,creditCard,expiry,cvv,shipping)
-        const docRef = await addDoc(collection(db, "orders"), {
-            fullNames: fullNames,
-            creditCard: creditCard,
-            expiry: expiry,
-            cvv: cvv,
-            shipping: shipping,
-        });
+        // Assuming the user is already authenticated before placing an order
+        const user = auth.currentUser;
 
-        Swal.fire(
-            'Successfully',
-            'Order Succesfull'
-        )
-    }
-    catch (e) {
+        if (user) {
+            const docRef = await addDoc(collection(db, "orders"), {
+                userId: user.uid,
+                fullNames: fullNames,
+                creditCard: creditCard,
+                expiry: expiry,
+                cvv: cvv,
+                shipping: shipping,
+            });
+
+            Swal.fire(
+                'Successfully',
+                'Order Successful'
+            );
+        } else {
+            // Handle the case where the user is not authenticated
+            Swal.fire({
+                icon: 'error',
+                title: 'User not authenticated!',
+            });
+        }
+    } catch (e) {
         Swal.fire({
             icon: 'error',
             title: 'Something went wrong! try again later',
-        })
+        });
     }
 }
 
@@ -286,7 +297,7 @@ function postRestaurants() {
     }
 
 }
-async function getData() {
+async function getData ()  {
     const querySnapshot = await getDocs(collection(db, "restaurants"));
     const Ads = []
     querySnapshot.forEach((doc) => {
@@ -316,5 +327,4 @@ export {
     logout,
     getSingleRestaurant,
     orderProceed,
-}
-// export default 
+}; 
