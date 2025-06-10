@@ -1,5 +1,4 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"
-// import { useState, useEffect } from "react";
 
 import Navbar from "../component/Navbar";
 import Landing from "../component/Landing"
@@ -11,8 +10,6 @@ import Error from "../component/Error";
 import AdminDashboard from "../component/AdminDashboard";
 import Admin from "../component/Admin";
 import CheckOut from "../component/CheckOut";
-// import { auth } from '../config/Firebase'
-// import { onAuthStateChanged } from "firebase/auth"
 
 const router = createBrowserRouter([
     {
@@ -55,8 +52,6 @@ const router = createBrowserRouter([
                 path: '/checkout',
                 element: <CheckOut />,
             },
-
-
         ]
     }
 ]);
@@ -67,14 +62,10 @@ function Router() {
 
 function Main() {
     return (
-
-        <div >
-            
+        <div>
             <Navbar />
             <Outlet />
         </div>
-
     )
 }
-// Main()
 export default Router
